@@ -1,0 +1,22 @@
+<div class="resultsHolder">
+<p>Generate Planning Zone URLs</p>
+<p>
+	<input type="text" ng-model="zoneCodeSearced">
+	<input type="button" value="Get URL" ng-click="generateZoneHeadUrl(zoneCodeSearced)">
+	<br>
+	<br>	
+	Head Zone URL: <a id="headZoneUrl" href="{{overlayUrl}}" target="_blank">{{overlayUrl}}</a>
+	<br>
+	<br>
+	Zone Schedule URL: <div id="zoneScheduleContainer" class="zoneScheduleList"><div>
+
+	<br>
+	<br>
+	<select xclass="form-control modal-input" >
+		<option value="1">One</option>
+		<option value="2">Two</option>
+		<option value="3">Three</option>
+		<option value="4">Four</option>
+	</select>
+</p>
+</div>

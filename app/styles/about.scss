@@ -1,0 +1,16 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.resultsHolder {
+	height:500px;
+}
+
+.zoneScheduleList {
+	height: 200px;
+}
+
+.zoneScheduleList a {
+	float: left;
+}

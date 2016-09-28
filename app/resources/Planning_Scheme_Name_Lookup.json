@@ -1,0 +1,172 @@
+[
+{
+	"Onemap_Planning_Scheme_Name": "BANYULE",
+	"Gov_Planning_Scheme_Name": "banyule",
+	"UrlCode_Planning_Scheme_Name": "bany"
+},
+{
+	"Onemap_Planning_Scheme_Name": "BAYSIDE",
+	"Gov_Planning_Scheme_Name": "bayside",
+	"UrlCode_Planning_Scheme_Name": "bays"
+},
+{
+	"Onemap_Planning_Scheme_Name": "BOROONDARA",
+	"Gov_Planning_Scheme_Name": "boroondara",
+	"UrlCode_Planning_Scheme_Name": "boro"
+},
+{
+	"Onemap_Planning_Scheme_Name": "BRIMBANK",
+	"Gov_Planning_Scheme_Name": "brimbank",
+	"UrlCode_Planning_Scheme_Name": "brim"
+},
+{
+	"Onemap_Planning_Scheme_Name": "CARDINIA",
+	"Gov_Planning_Scheme_Name": "cardinia",
+	"UrlCode_Planning_Scheme_Name": "card"
+},
+{
+	"Onemap_Planning_Scheme_Name": "CASEY",
+	"Gov_Planning_Scheme_Name": "casey",
+	"UrlCode_Planning_Scheme_Name": "case"
+},
+{
+	"Onemap_Planning_Scheme_Name": "DAREBIN",
+	"Gov_Planning_Scheme_Name": "darebin",
+	"UrlCode_Planning_Scheme_Name": "dare"
+},
+{
+	"Onemap_Planning_Scheme_Name": "FRANKSTON",
+	"Gov_Planning_Scheme_Name": "frankston",
+	"UrlCode_Planning_Scheme_Name": "fran"
+},
+{
+	"Onemap_Planning_Scheme_Name": "GLEN EIRA",
+	"Gov_Planning_Scheme_Name": "gleneira",
+	"UrlCode_Planning_Scheme_Name": "glen"
+},
+{
+	"Onemap_Planning_Scheme_Name": "GREATER DANDENONG",
+	"Gov_Planning_Scheme_Name": "greaterdandenong",
+	"UrlCode_Planning_Scheme_Name": "gdan"
+},
+{
+	"Onemap_Planning_Scheme_Name": "GREATER GEELONG",
+	"Gov_Planning_Scheme_Name": "greatergeelong",
+	"UrlCode_Planning_Scheme_Name": "ggee"
+},
+{
+	"Onemap_Planning_Scheme_Name": "HOBSONS BAY",
+	"Gov_Planning_Scheme_Name": "hobsonsbay",
+	"UrlCode_Planning_Scheme_Name": "hbay"
+},
+{
+	"Onemap_Planning_Scheme_Name": "HUME",
+	"Gov_Planning_Scheme_Name": "hume",
+	"UrlCode_Planning_Scheme_Name": "hume"
+},
+{
+	"Onemap_Planning_Scheme_Name": "KINGSTON",
+	"Gov_Planning_Scheme_Name": "kingston",
+	"UrlCode_Planning_Scheme_Name": "king"
+},
+{
+	"Onemap_Planning_Scheme_Name": "KNOX",
+	"Gov_Planning_Scheme_Name": "knox",
+	"UrlCode_Planning_Scheme_Name": "knox"
+},
+{
+	"Onemap_Planning_Scheme_Name": "MANNINGHAM",
+	"Gov_Planning_Scheme_Name": "manningham",
+	"UrlCode_Planning_Scheme_Name": "mann"
+},
+{
+	"Onemap_Planning_Scheme_Name": "MARIBYRNONG",
+	"Gov_Planning_Scheme_Name": "maribyrnong",
+	"UrlCode_Planning_Scheme_Name": "mari"
+},
+{
+	"Onemap_Planning_Scheme_Name": "MAROONDAH",
+	"Gov_Planning_Scheme_Name": "maroondah",
+	"UrlCode_Planning_Scheme_Name": "maro"
+},
+{
+	"Onemap_Planning_Scheme_Name": "MELBOURNE",
+	"Gov_Planning_Scheme_Name": "melbourne",
+	"UrlCode_Planning_Scheme_Name": "melb"
+},
+{
+	"Onemap_Planning_Scheme_Name": "MELTON",
+	"Gov_Planning_Scheme_Name": "melton",
+	"UrlCode_Planning_Scheme_Name": "melt"
+},
+{
+	"Onemap_Planning_Scheme_Name": "MITCHELL",
+	"Gov_Planning_Scheme_Name": "mitchell",
+	"UrlCode_Planning_Scheme_Name": "mith"
+},
+{
+	"Onemap_Planning_Scheme_Name": "MONASH",
+	"Gov_Planning_Scheme_Name": "monash",
+	"UrlCode_Planning_Scheme_Name": "mona"
+},
+{
+	"Onemap_Planning_Scheme_Name": "MOONEE VALLEY",
+	"Gov_Planning_Scheme_Name": "mooneevalley",
+	"UrlCode_Planning_Scheme_Name": "moon"
+},
+{
+	"Onemap_Planning_Scheme_Name": "MORELAND",
+	"Gov_Planning_Scheme_Name": "moreland",
+	"UrlCode_Planning_Scheme_Name": "more"
+},
+{
+	"Onemap_Planning_Scheme_Name": "MORNINGTON PENINSULA",
+	"Gov_Planning_Scheme_Name": "morningtonpeninsula",
+	"UrlCode_Planning_Scheme_Name": "morn"
+},
+{
+	"Onemap_Planning_Scheme_Name": "NILLUMBIK",
+	"Gov_Planning_Scheme_Name": "nillumbik",
+	"UrlCode_Planning_Scheme_Name": "nill"
+},
+{
+	"Onemap_Planning_Scheme_Name": "PORT OF MELBOURNE",
+	"Gov_Planning_Scheme_Name": "portofmelbourne",
+	"UrlCode_Planning_Scheme_Name": "pmel"
+},
+{
+	"Onemap_Planning_Scheme_Name": "PORT PHILLIP",
+	"Gov_Planning_Scheme_Name": "portphillip",
+	"UrlCode_Planning_Scheme_Name": "port"
+},
+{
+	"Onemap_Planning_Scheme_Name": "STONNINGTON",
+	"Gov_Planning_Scheme_Name": "stonnington",
+	"UrlCode_Planning_Scheme_Name": "ston"
+},
+{
+	"Onemap_Planning_Scheme_Name": "WHITEHORSE",
+	"Gov_Planning_Scheme_Name": "whitehorse",
+	"UrlCode_Planning_Scheme_Name": "whse"
+},
+{
+	"Onemap_Planning_Scheme_Name": "WHITTLESEA",
+	"Gov_Planning_Scheme_Name": "whittlesea",
+	"UrlCode_Planning_Scheme_Name": "wsea"
+},
+{
+	"Onemap_Planning_Scheme_Name": "WYNDHAM",
+	"Gov_Planning_Scheme_Name": "wyndham",
+	"UrlCode_Planning_Scheme_Name": "wynd"
+},
+{
+	"Onemap_Planning_Scheme_Name": "YARRA",
+	"Gov_Planning_Scheme_Name": "yarra",
+	"UrlCode_Planning_Scheme_Name": "yara"
+},
+{
+	"Onemap_Planning_Scheme_Name": "YARRA RANGES",
+	"Gov_Planning_Scheme_Name": "yarraranges",
+	"UrlCode_Planning_Scheme_Name": "yran"
+}
+]
