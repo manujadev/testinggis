@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "name": "namedmap_tutorial_open",
+  "auth": {
+    "method": "open"
+  },
+  "layergroup": {
+    "version": "1.0.1",
+    "layers": [{
+      "type": "cartodb",
+      "options": {
+        "cartocss_version": "2.1.1",
+        "cartocss": "#tractprojectsdataset { marker-fill-opacity: 0.9; marker-line-color: #FFF; marker-line-width: 1; marker-line-opacity: 1; marker-placement: point; marker-type: ellipse; marker-width: 10; marker-allow-overlap: true; marker-fill: #B2DF8A;}",
+        "sql": "SELECT * FROM tractprojectsdataset",
+        "interactivity": ["cartodb_id", "name", "clname"]
+      }
+    }]
+  }
+}

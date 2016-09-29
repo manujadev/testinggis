@@ -19,21 +19,25 @@ angular.module('myproj01App')
 	    user_name: 'tenant-1',
 	    type: 'namedmap',
 	    named_map: {
-	      name: "namedmap_tutorial",
+	      name: "namedmap_tutorial_open",
 	      layers: [{
 	        layer_name: "t",
 	        interactivity: "cartodb_id, name, clname"
 	       }]
 	     }
-	    })
+	    },
+	    {https: true /* HTTPS is needed for named maps with auth tokens*/})
 	    .addTo(map)
 	    .done(function(layer) {
+	      console.log(layer);
+	      console.log('SubLayer', layer.getSubLayer(0));
+	     // layer.setAuthToken('world_box_one');
 	      layer.getSubLayer(0).setInteraction(true);
 
 	      // on mouseover
 	      layer.getSubLayer(0).on('featureOver', function(e, pos, pixel, data) {
 	        // print data to console log
-	        console.log("Event #" + data.cartodb_id + ", name " + data.name + ", max population: " + data.clname);
+	        console.log("Event #" + data.cartodb_id + ", Place " + data.name + ", Name: " + data.clname);
 	      });
 	 
 	      // show infowindows on click
