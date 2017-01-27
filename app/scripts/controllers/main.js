@@ -17,7 +17,50 @@ angular.module('myproj01App')
             $scope.layerMarker = "";
             $scope.currentLayer = null;
             // create a map in the "map" div, set the view to a given place and zoom
-            var map = L.map('map').setView([51.505, -0.09], 13);
+
+                //----------------------- Add layers - START -----------------------
+                var littleton = L.marker([39.61, -105.02]).bindPopup('This is Littleton, CO.'),
+                    denver    = L.marker([39.74, -104.99]).bindPopup('This is Denver, CO.'),
+                    aurora    = L.marker([39.73, -104.8]).bindPopup('This is Aurora, CO.'),
+                    golden    = L.marker([39.77, -105.23]).bindPopup('This is Golden, CO.');
+
+                var cities = L.layerGroup([littleton, denver, aurora, golden]);
+
+                var grayscale = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}.png', {id: 'light', attribution: 'Layer1'}),
+                    streets   = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_nolabels/{z}/{x}/{y}.png', {id: 'dark', attribution: 'Layer2'});
+
+                var wmsLayer = L.tileLayer.wms('http://demo.opengeo.org/geoserver/ows?', {
+                        layers: 'nasa:bluemarble',
+                        attribution: 'Test <a href="http://google.com">Link</a>"'
+                    });
+
+                var p1 = L.point(10, 10),
+                    p2 = L.point(40, 60);
+
+                var map = L.map('map', {
+                    center: [39.73, -104.99],
+                    zoom: 10,
+                    layers: [grayscale, cities]
+                });
+
+                map.setMaxBounds([[30, -115], [50, -90]]);
+
+                var baseMaps = {
+                    "Grayscale": grayscale,
+                    "Streets": streets
+                };
+
+                var overlayMaps = {
+                    "Cities": cities,
+                    "WMS": wmsLayer
+                };
+
+                L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+                //----------------------- Add layers - END -----------------------
+
+
+            //var map = L.map('map').setView([51.505, -0.09], 13);
             $scope.map = map;
             // add an OpenStreetMap tile layer
             var tileLayer = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}.png', {
@@ -132,6 +175,55 @@ angular.module('myproj01App')
                     myLayer.editing.enable();
                     myLayer.addTo(drawnItems);
                 }
+            };
+
+            $scope.generatePDF = function () {
+                 var mapPane = $(".leaflet-map-pane")[0];
+                var mapTransform = mapPane.style.transform.replace("translate3d(", "").split(",");
+                var mapX = parseFloat(mapTransform[0].replace("px", ""));
+                var mapY = parseFloat(mapTransform[1].replace("px", ""));
+                mapPane.style.transform = "translate3d(0px,0px,0px)";
+
+                var myTiles = $("img.leaflet-tile");
+                var tilesLeft = [];
+                var tilesTop = [];
+                for (var i = 0; i < myTiles.length; i++) {
+                    tilesLeft.push(parseFloat(myTiles[i].style.left.replace("px", "")));
+                    tilesTop.push(parseFloat(myTiles[i].style.top.replace("px", "")));
+                    myTiles[i].style.left = (tilesLeft[i] + mapX) + "px";
+                    myTiles[i].style.top = (tilesTop[i] + mapY) + "px";
+                }
+
+                var myDivicons = $(".myDivicon");
+                var dx = [];
+                var dy = [];
+                var mLeft = [];
+                var mTop = [];
+                for (var i = 0; i < myDivicons.length; i++) {
+                    mLeft.push(parseFloat(myDivicons[i].style.marginLeft.replace("px", "")));
+                    mTop.push(parseFloat(myDivicons[i].style.marginTop.replace("px", "")));
+                    var curTransform = myDivicons[i].style.transform;
+                    var splitTransform = curTransform.replace("translate3d(", "").split(",");
+                    dx.push(parseFloat(splitTransform[0].replace("px", "")));
+                    dy.push(parseFloat(splitTransform[1].replace("px", "")));
+                    myDivicons[i].style.transform = "translate3d(" + (dx[i] + mLeft[i] + mapX) + "px, " + (dy[i] + mTop[i] + mapY) + "px, 0px)";
+                    myDivicons[i].style.marginLeft = "0px";
+                    myDivicons[i].style.marginTop = "0px";
+                }
+
+                var linesLayer = $("svg.leaflet-zoom-animated")[0];
+                var linesTransform = linesLayer.style.transform.replace("translate3d(", "").split(",");
+                var linesX = parseFloat(linesTransform[0].replace("px", ""));
+                var linesY = parseFloat(linesTransform[1].replace("px", ""));
+                linesLayer.style.transform = "translate3d(" + ((linesX + mapX) / 2) + "px," + ((linesY + mapY) / 2) + "px, 0px)";
+
+                html2canvas(document.getElementById("map"), {
+                    useCORS: true,
+                    onrendered: function (canvas) {
+                        document.body.appendChild(canvas);
+
+                    }
+                });        
             };
         }
     ]);

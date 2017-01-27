@@ -33,7 +33,12 @@ angular
                 templateUrl: 'views/cartonamed.html',
                 controller: 'CartoNamedMapsController',
                 controllerAs: 'cartonamed'
-            })            
+            })
+            .when('/checkcartoversions', {
+                templateUrl: 'views/checkcartoversions.html',
+                controller: 'CheckCartoVersionsController',
+                controllerAs: 'checkcartoversions'
+            })
             .otherwise({
                 redirectTo: '/'
             });

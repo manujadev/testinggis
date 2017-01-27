@@ -15,5 +15,18 @@
         "interactivity": ["cartodb_id", "name", "clname"]
       }
     }]
+  },
+  "view": {
+    "zoom": 12,
+    "center": {
+      "lng": 144.970944,
+      "lat": -37.810433
+    },
+    "bounds": {
+      "west": -45,
+      "south": -45,
+      "east": 45,
+      "north": 45
+    }
   }
 }

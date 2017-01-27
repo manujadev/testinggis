@@ -1,0 +1,293 @@
+{
+  "id": "f3c9cd90-4b20-11e5-a6ef-0e4fddd5de28",
+  "version": "0.1.0",
+  "title": "VIC_M_O_Context_Map",
+  "likes": 0,
+  "description": null,
+  "scrollwheel": false,
+  "legends": true,
+  "url": null,
+  "map_provider": "leaflet",
+  "bounds": [
+    [
+      -38.17883049854012,
+      144.0795135498047
+    ],
+    [
+      -37.96937272768304,
+      144.7064208984375
+    ]
+  ],
+  "center": "[-38.07417659361918, 144.3929672241211]",
+  "zoom": 12,
+  "updated_at": "2016-08-30T17:15:49+00:00",
+  "layers": [
+    {
+      "options": {
+        "visible": true,
+        "type": "Tiled",
+        "name": "Positron",
+        "className": "httpsbasemapscartocdncomlight_nolabelszxypng",
+        "base_type": "default",
+        "urlTemplate": "http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
+        "minZoom": "0",
+        "maxZoom": "18",
+        "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
+        "subdomains": "abcd",
+        "style": null,
+        "labels": {
+          "url": "http://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png"
+        },
+        "read_only": true,
+        "category": "CARTO",
+        "order": 0,
+        "id": "815aedcb-592a-44f1-ae48-6f45f69daf37"
+      },
+      "infowindow": null,
+      "tooltip": null,
+      "id": "815aedcb-592a-44f1-ae48-6f45f69daf37",
+      "order": 0,
+      "type": "tiled"
+    },
+    {
+      "type": "namedmap",
+      "order": 1,
+      "options": {
+        "type": "namedmap",
+        "user_name": "mnatoli",
+        "maps_api_template": "https://{user}.carto.com:443",
+        "sql_api_template": "https://{user}.carto.com:443",
+        "tiler_protocol": "http",
+        "tiler_domain": "carto.com",
+        "tiler_port": "80",
+        "filter": "mapnik",
+        "named_map": {
+          "name": "tpl_f3c9cd90_4b20_11e5_a6ef_0e4fddd5de28",
+          "stat_tag": "f3c9cd90-4b20-11e5-a6ef-0e4fddd5de28",
+          "params": {
+            "layer0": 1,
+            "layer1": 1,
+            "layer2": 1,
+            "layer3": 1,
+            "layer4": 1,
+            "layer5": 1,
+            "layer6": 1,
+            "layer7": 1,
+            "layer8": 1,
+            "layer9": 1
+          },
+          "layers": [
+            {
+              "id": "57023cef-5ffa-4491-abae-2eea56942e5f",
+              "layer_name": "vic_m_o_land_uses",
+              "interactivity": "cartodb_id",
+              "visible": true,
+              "legend": {
+                "type": "category",
+                "show_title": false,
+                "title": "",
+                "template": "<div class='cartodb-legend custom category'>\n\n<div class=\"legend-title\">Land use\n        </div>\n        \n\n\n<ul>\n            \n\t\n\t\n\t<li>\n\n\n\n                <div class=\"bullet\" style=\"background: #562e60\"></div> Retail\n            \n\t\n\t\n\t</li>\n            \n\t\n\t\n\t<li>\n\n\n\n                <div class=\"bullet\" style=\"background: #c1aac1\"></div> Mixed Use\n            \n\t\n\t\n\t</li>\n            \n\t\n\t\n\t<li>\n\n\n\n                <div class=\"bullet\" style=\"background: #5c88a0\"></div> Office / Commercial\n            \n\t\n\t\n\t</li>\n            \n\t\n\t\n\t<li>\n\n\n\n                <div class=\"bullet\" style=\"background: #697c92\"></div> Industrial\n            \n\t\n\t\n\t</li>\n            \n\t\n\t\n\t<li>\n\n\n\n                <div class=\"bullet\" style=\"background: #f4b59f\"></div> Education\n            \n\t\n\t\n\t</li>\n            \n\t\n\t\n\t<li>\n\n\n\n                <div class=\"bullet\" style=\"background: #aecc8f\"></div> open Space\n            \n\t\n\t\n\t</li>\n        \n\n\n</ul>\n\n\n\n\n<br>\n    <div class=\"legend-title\">Transport\n    </div>\n\n    <ul class=\"transport\">\n        \n\t\n\t\n\t<li class=\"bkg Train\">\n\n\n\n            <div class=\"bullet\" style=\"background:url(https://s3.amazonaws.com/com.cartodb.users-assets.production/production/mnatoli/assets/20150824115141Train_Icons-Option-2.png)\"></div>\n            Train Stations\n        \n\t\n\t\n\t</li>\n        \n\t\n\t\n\t<li class=\"bkg Tram\">\n\n\n\n            <div class=\"bullet\" style=\"background:url(https://s3.amazonaws.com/com.cartodb.users-assets.production/production/mnatoli/assets/20150825121252tram-icon2.png)\"></div>\n            Tram Stops\n            \n\t\n\t\n\t<li class=\"bkg SMARTBUS\">\n\n\n\n                <div class=\"bullet\" style=\"background:url(https://s3.amazonaws.com/com.cartodb.users-assets.production/production/mnatoli/assets/20150824122709smartbus_icon.png)\"></div>\n                SMARTBUS STOPS\n            \n\t\n\t\n\t</li>\n        \n\t\n\t\n\t</li>\n        \n\t\n\t\n\t<li class=\"bkg BUS\">\n\n\n\n            <div class=\"bullet\" style=\"background:url(https://s3.amazonaws.com/com.cartodb.users-assets.production/production/mnatoli/assets/20150824115847bus-icon.png)\"></div>\n            Bus Stops\n            \n\t\n\t\n\t<li class=\"line\">\n\n\n\n                <div class=\"bullet\" style=\"background:#850200\"></div>\n                TRAIN LINES\n            \n\t\n\t\n\t</li>\n            \n\t\n\t\n\t<li class=\"line\">\n\n\n\n                <div class=\"bullet\" style=\"background:#ea9653\"></div>\n                TRAM ROUTES\n            \n\t\n\t\n\t</li>\n            \n\t\n\t\n\t<li class=\"line\">\n\n\n\n                <div class=\"bullet\" style=\"background:#0F3B82\"></div>\n                SMARTBUS ROUTES\n            \n\t\n\t\n\t</li>\n            \n\t\n\t\n\t<li class=\"dashed-line\">\n\n\n\n\n                <div data-color=\"#5CA2D1\" class=\"bullet\" style=\"background:#5CA2D1; background-color:#5CA2D1\"></div>\n                BUS ROUTES\n            \n\t\n\t\n\t\n\t</li>\n        \n\n\n</ul>\n\n\n\n        \n</div>\n\n",
+                "visible": true,
+                "items": [
+                  {
+                    "name": "B1Z",
+                    "visible": true,
+                    "value": "#A6CEE3"
+                  },
+                  {
+                    "name": "C1Z",
+                    "visible": true,
+                    "value": "#1F78B4"
+                  },
+                  {
+                    "name": "C2Z",
+                    "visible": true,
+                    "value": "#B2DF8A"
+                  },
+                  {
+                    "name": "IN1Z",
+                    "visible": true,
+                    "value": "#33A02C"
+                  },
+                  {
+                    "name": "IN2Z",
+                    "visible": true,
+                    "value": "#FB9A99"
+                  },
+                  {
+                    "name": "IN3Z",
+                    "visible": true,
+                    "value": "#E31A1C"
+                  },
+                  {
+                    "name": "MUZ",
+                    "visible": true,
+                    "value": "#FDBF6F"
+                  },
+                  {
+                    "name": "MUZ1",
+                    "visible": true,
+                    "value": "#FF7F00"
+                  },
+                  {
+                    "name": "MUZ2",
+                    "visible": true,
+                    "value": "#CAB2D6"
+                  },
+                  {
+                    "name": "PUZ2",
+                    "visible": true,
+                    "value": "#6A3D9A"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "21299d02-d05a-47e8-9754-f5f4024374a3",
+              "layer_name": "vic_m_o_schools_state_all_landusepuz2_dissolved",
+              "interactivity": "cartodb_id",
+              "visible": true
+            },
+            {
+              "id": "bed1a298-a48a-48a6-82c9-45e88c72baeb",
+              "layer_name": "vic m o open space",
+              "interactivity": "cartodb_id",
+              "visible": true
+            },
+            {
+              "id": "790a465d-c283-4f77-9379-99317833a400",
+              "layer_name": "vic_m_o_transport_routes",
+              "interactivity": "cartodb_id",
+              "visible": true
+            },
+            {
+              "id": "93e222fc-4134-422a-a38f-f9babf0051b9",
+              "layer_name": "vic m o retailall",
+              "interactivity": "cartodb_id",
+              "visible": true
+            },
+            {
+              "id": "808df06e-b37a-4f30-918c-0f9909773a9f",
+              "layer_name": "vic_m_d_smart_bus_stops",
+              "interactivity": "cartodb_id",
+              "visible": true
+            },
+            {
+              "id": "e55db95a-e78c-4cc3-942f-42bafa5b4b53",
+              "layer_name": "vic_m_d_train_stations",
+              "interactivity": "cartodb_id",
+              "visible": true
+            },
+            {
+              "id": "d5efc382-5e3e-4c27-bf78-017ba780755b",
+              "layer_name": "vic_m_d_tram_stop_destination",
+              "interactivity": "cartodb_id",
+              "visible": true
+            },
+            {
+              "id": "ed33cf29-498c-42ca-becf-5ea340bf227d",
+              "layer_name": "vic_m_d_bus_stop_destination",
+              "interactivity": "cartodb_id",
+              "visible": true
+            },
+            {
+              "id": "e54b7924-c097-48b2-8baf-b3370ec391fa",
+              "layer_name": "vic_m_d_coleswooliesaldisupaiga_leosmaxifoods_28355_perturb5m",
+              "interactivity": "cartodb_id",
+              "visible": true
+            }
+          ]
+        },
+        "attribution": ""
+      }
+    },
+    {
+      "options": {
+        "visible": true,
+        "type": "Tiled",
+        "name": "Positron Labels",
+        "urlTemplate": "http://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png",
+        "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
+        "minZoom": "0",
+        "maxZoom": "18",
+        "subdomains": "abcd",
+        "kind": "tiled",
+        "order": 11,
+        "id": "ecbd093b-9bc9-4021-8f7b-3fb9ece18be8",
+        "className": "httpsbasemapscartocdncomlight_only_labelszxypng"
+      },
+      "infowindow": null,
+      "tooltip": null,
+      "id": "ecbd093b-9bc9-4021-8f7b-3fb9ece18be8",
+      "order": 11,
+      "type": "tiled"
+    }
+  ],
+  "overlays": [
+    {
+      "type": "share",
+      "order": 2,
+      "options": {
+        "display": true,
+        "x": 20,
+        "y": 20
+      },
+      "template": ""
+    },
+    {
+      "type": "search",
+      "order": 3,
+      "options": {
+        "display": true,
+        "x": 60,
+        "y": 20
+      },
+      "template": ""
+    },
+    {
+      "type": "layer_selector",
+      "order": 4,
+      "options": {
+        "x": 220,
+        "y": 20,
+        "display": true
+      },
+      "template": null
+    },
+    {
+      "type": "zoom",
+      "order": 6,
+      "options": {
+        "display": true,
+        "x": 20,
+        "y": 20
+      },
+      "template": "<a href=\"#zoom_in\" class=\"zoom_in\">+</a> <a href=\"#zoom_out\" class=\"zoom_out\">-</a>"
+    },
+    {
+      "type": "loader",
+      "order": 8,
+      "options": {
+        "display": true,
+        "x": 20,
+        "y": 150
+      },
+      "template": "<div class=\"loader\" original-title=\"\"></div>"
+    },
+    {
+      "type": "logo",
+      "order": 9,
+      "options": {
+        "display": true,
+        "x": 10,
+        "y": 40
+      },
+      "template": ""
+    }
+  ],
+  "prev": null,
+  "next": null,
+  "transition_options": {
+    "time": 0
+  }
+}

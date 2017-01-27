@@ -1,0 +1,198 @@
+{
+  "id": "f34b7e6e-4fb1-11e5-9e2d-0e853d047bba",
+  "version": "0.1.0",
+  "title": "VIC_M_O_Public_Transport",
+  "likes": 0,
+  "description": null,
+  "scrollwheel": false,
+  "legends": true,
+  "url": null,
+  "map_provider": "leaflet",
+  "bounds": [
+    [
+      -37.81615787094836,
+      144.8549509048462
+    ],
+    [
+      -37.78987887025284,
+      144.9333143234253
+    ]
+  ],
+  "center": "[-37.80301953938565, 144.89413261413574]",
+  "zoom": 15,
+  "updated_at": "2016-08-30T17:09:08+00:00",
+  "layers": [
+    {
+      "options": {
+        "visible": true,
+        "type": "Tiled",
+        "name": "Positron",
+        "className": "httpsbasemapscartocdncomlight_nolabelszxypng",
+        "base_type": "default",
+        "urlTemplate": "http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png",
+        "minZoom": "0",
+        "maxZoom": "18",
+        "attribution": "&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href= \"https://carto.com/attributions\">CARTO</a>",
+        "subdomains": "abcd",
+        "style": null,
+        "labels": {
+          "url": "http://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png"
+        },
+        "read_only": true,
+        "category": "CARTO",
+        "order": 0,
+        "id": "d28eabb9-4626-48e2-9c70-d4a1734d9c58",
+        "parent_id": null
+      },
+      "infowindow": null,
+      "tooltip": null,
+      "id": "d28eabb9-4626-48e2-9c70-d4a1734d9c58",
+      "order": 0,
+      "type": "tiled"
+    },
+    {
+      "type": "namedmap",
+      "order": 1,
+      "options": {
+        "type": "namedmap",
+        "user_name": "mnatoli",
+        "maps_api_template": "https://{user}.carto.com:443",
+        "sql_api_template": "https://{user}.carto.com:443",
+        "tiler_protocol": "http",
+        "tiler_domain": "carto.com",
+        "tiler_port": "80",
+        "filter": "mapnik",
+        "named_map": {
+          "name": "tpl_f34b7e6e_4fb1_11e5_9e2d_0e853d047bba",
+          "stat_tag": "f34b7e6e-4fb1-11e5-9e2d-0e853d047bba",
+          "params": {
+            "layer0": 1,
+            "layer1": 1,
+            "layer2": 1,
+            "layer3": 1,
+            "layer4": 1
+          },
+          "layers": [
+            {
+              "id": "582d0ec2-163d-4d11-800b-eeddc66105b1",
+              "layer_name": "vic_m_o_transport_routes",
+              "interactivity": "cartodb_id",
+              "visible": true,
+              "legend": {
+                "type": "custom",
+                "show_title": false,
+                "title": "",
+                "template": "<div class='cartodb-legend custom category'>\n\n\n    <div class=\"legend-title\">Transport\n    </div>\n\n    <ul class=\"transport\">\n        \n\t\n\t\n\t\n\t<li class=\"bkg Train\">\n\n\n\n\n            <div class=\"bullet\" style=\"background:url(https://s3.amazonaws.com/com.cartodb.users-assets.production/production/mnatoli/assets/20150824115141Train_Icons-Option-2.png)\"></div>\n            Train Stations\n        \n\t\n\t\n\t\n\t</li>\n        \n\t\n\t\n\t\n\t<li class=\"bkg Tram\">\n\n\n\n\n            <div class=\"bullet\" style=\"background:url(https://s3.amazonaws.com/com.cartodb.users-assets.production/production/mnatoli/assets/20150825121252tram-icon2.png)\"></div>\n            Tram Stops\n            \n\t\n\t\n\t\n\t<li class=\"bkg SMARTBUS\">\n\n\n\n\n                <div class=\"bullet\" style=\"background:url(https://s3.amazonaws.com/com.cartodb.users-assets.production/production/mnatoli/assets/20150824122709smartbus_icon.png)\"></div>\n                SMARTBUS STOPS\n            \n\t\n\t\n\t\n\t</li>\n        \n\t\n\t\n\t\n\t</li>\n        \n\t\n\t\n\t\n\t<li class=\"bkg BUS\">\n\n\n\n\n            <div class=\"bullet\" style=\"background:url(https://s3.amazonaws.com/com.cartodb.users-assets.production/production/mnatoli/assets/20150824115847bus-icon.png)\"></div>\n            Bus Stops\n            \n\t\n\t\n\t\n\t<li class=\"line\">\n\n\n\n\n                <div class=\"bullet\" style=\"background:#850200\"></div>\n                TRAIN LINES\n            \n\t\n\t\n\t\n\t</li>\n            \n\t\n\t\n\t\n\t<li class=\"line\">\n\n\n\n\n                <div class=\"bullet\" style=\"background:#ea9653\"></div>\n                TRAM ROUTES\n            \n\t\n\t\n\t\n\t</li>\n            \n\t\n\t\n\t\n\t<li class=\"line\">\n\n\n\n\n                <div class=\"bullet\" style=\"background:#0F3B82\"></div>\n                SMARTBUS ROUTES\n            \n\t\n\t\n\t\n\t</li>\n            \n\t\n\t\n\t\n\t<li class=\"dashed-line\">\n\n\n\n\n                <div data-color=\"#5CA2D1\" class=\"bullet\" style=\"background:#5CA2D1; background-color:#5CA2D1\"></div>\n                BUS ROUTES\n            \n\t\n\t\n\t\n\t</li>\n        \n\n\n\n</ul>\n\n\n\n\n        \n</div>\n\n",
+                "visible": true,
+                "items": [
+                  {
+                    "name": "Untitled",
+                    "visible": true,
+                    "value": "#cccccc",
+                    "sync": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": "e2ec926b-ee52-4390-8dd6-1078e7293982",
+              "layer_name": "vic_m_d_tram_stop_destination",
+              "interactivity": "cartodb_id",
+              "visible": true
+            },
+            {
+              "id": "e843ef5f-ddc1-4c2c-8256-c1026bec7ef3",
+              "layer_name": "vic_m_d_bus_stop_destination",
+              "interactivity": "cartodb_id",
+              "visible": true,
+              "infowindow": {
+                "fields": [
+                  {
+                    "name": "rtusestop",
+                    "title": true,
+                    "position": 1
+                  }
+                ],
+                "template_name": "table/views/infowindow_light",
+                "template": "<div class=\"cartodb-popup v2\">\n  <a href=\"#close\" class=\"cartodb-popup-close-button close\">x</a>\n  <div class=\"cartodb-popup-content-wrapper\">\n    <div class=\"cartodb-popup-content\">\n      {{#content.fields}}\n        {{#title}}<h4>{{title}}</h4>{{/title}}\n        {{#value}}\n          <p {{#type}}class=\"{{ type }}\"{{/type}}>{{{ value }}}</p>\n        {{/value}}\n        {{^value}}\n          <p class=\"empty\">null</p>\n        {{/value}}\n      {{/content.fields}}\n    </div>\n  </div>\n  <div class=\"cartodb-popup-tip-container\"></div>\n</div>\n",
+                "alternative_names": {},
+                "width": 226,
+                "maxHeight": 180
+              }
+            },
+            {
+              "id": "b1c89a97-3383-4352-80bc-66b26b33eea4",
+              "layer_name": "vic_m_d_smart_bus_stops",
+              "interactivity": "cartodb_id",
+              "visible": true
+            },
+            {
+              "id": "57acfe5a-450b-4942-81ee-c0d5a2031c43",
+              "layer_name": "vic_m_d_train_stations",
+              "interactivity": "cartodb_id",
+              "visible": true
+            }
+          ]
+        },
+        "attribution": ""
+      }
+    }
+  ],
+  "overlays": [
+    {
+      "type": "share",
+      "order": 2,
+      "options": {
+        "display": true,
+        "x": 20,
+        "y": 20
+      },
+      "template": ""
+    },
+    {
+      "type": "search",
+      "order": 3,
+      "options": {
+        "display": true,
+        "x": 60,
+        "y": 20
+      },
+      "template": ""
+    },
+    {
+      "type": "zoom",
+      "order": 6,
+      "options": {
+        "display": true,
+        "x": 20,
+        "y": 20
+      },
+      "template": "<a href=\"#zoom_in\" class=\"zoom_in\">+</a> <a href=\"#zoom_out\" class=\"zoom_out\">-</a>"
+    },
+    {
+      "type": "loader",
+      "order": 8,
+      "options": {
+        "display": true,
+        "x": 20,
+        "y": 150
+      },
+      "template": "<div class=\"loader\" original-title=\"\"></div>"
+    },
+    {
+      "type": "logo",
+      "order": 9,
+      "options": {
+        "display": true,
+        "x": 10,
+        "y": 40
+      },
+      "template": ""
+    }
+  ],
+  "prev": null,
+  "next": null,
+  "transition_options": {
+    "time": 0
+  }
+}

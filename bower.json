@@ -11,12 +11,12 @@
     "angular-sanitize": "^1.4.0",
     "angular-touch": "^1.4.0",
     "leaflet": "^0.7.7",
-    "leaflet-draw": "^0.3.0",
+    "leaflet-draw": "git://github.com/manujadev/Leaflet.draw.git#master",
     "jquery": "^3.1.0",
     "bowser": "^1.4.1",
-    "leaflet.draw.drag": "leaflet-draw-drag#^0.1.6",
     "lodash": "^4.15.0",
-    "cartodb.js": "^3.15.9"
+    "cartodb.js": "^3.15.9",
+    "html2canvas": "^0.4.1"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"

@@ -1,0 +1,36 @@
+{
+  "version": "0.0.1",
+  "name": "named_map_tutorial_001",
+  "auth": {
+    "method": "token",
+     "valid_tokens": [
+      "casper468",
+      "lucifer125"
+    ]
+  },
+  "layergroup": {
+    "version": "1.0.1",
+    "layers": [{
+      "type": "cartodb",
+      "options": { 
+        "cartocss_version": "2.1.1",
+        "cartocss": "#named_map_tutorial_table{  marker-fill-opacity: 0.9; marker-line-color: #FFF; marker-line-width: 1; marker-line-opacity: 1; marker-placement: point; marker-type: ellipse; marker-width: 10; marker-fill: #FF6600; marker-allow-overlap: true; }",
+        "sql": "SELECT * FROM named_map_tutorial_table",
+        "interactivity": ["cartodb_id", "name", "adm1name"]
+      }
+    }]
+  },
+  "view": {
+    "zoom": 12,
+    "center": {
+      "lng": 144.970944,
+      "lat": -37.810433
+    },
+    "bounds": {
+      "west": -45,
+      "south": -45,
+      "east": 45,
+      "north": 45
+    }
+  }
+}

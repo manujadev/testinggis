@@ -1,0 +1,117 @@
+{
+  "version": "0.0.1",
+  "name": "context_plan_named",
+  "auth": {
+    "method": "token",
+     "valid_tokens": [
+      "casper468",
+      "lucifer135"
+    ]
+  },
+  "layergroup": {
+    "version": "1.0.1",
+    "layers": [{
+      "type": "cartodb",
+      "options": { 
+        "cartocss_version": "2.1.1",
+        "cartocss": "#vic_m_o_land_uses {   polygon-opacity: 0.7;   line-color: #FFFFFF;   line-width: 1.5;   line-opacity: 1;} #vic_m_o_land_uses[zone_code=\"B1Z\"] { polygon-fill: #5c88a0;} #vic_m_o_land_uses[zone_code=\"C1Z\"] {   polygon-fill: #5c88a0;} #vic_m_o_land_uses[zone_code=\"C2Z\"] {   polygon-fill: #5c88a0;} #vic_m_o_land_uses[zone_code=\"IN1Z\"] { polygon-fill: #697c92;} #vic_m_o_land_uses[zone_code=\"IN2Z\"] { polygon-fill: #697c92;} #vic_m_o_land_uses[zone_code=\"IN3Z\"] { polygon-fill: #697c92;} #vic_m_o_land_uses[zone_code=\"MUZ\"] {   polygon-fill: #c1aac1;}#vic_m_o_land_uses[zone_code=\"MUZ1\"] {   polygon-fill: #c1aac1;} #vic_m_o_land_uses[zone_code=\"MUZ2\"] {   polygon-fill: #c1aac1;} #vic_m_o_land_uses [zoom < 15] {   line-width: 1;   line-opacity: .8;}",
+        "sql": "SELECT * FROM vic_m_o_land_uses",
+        "interactivity": ["cartodb_id"]
+      }
+    },
+    {
+        "type": "cartodb",        
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "#vic_m_d_schools_state_all_landusepuz2_dissolved{ polygon-fill: #f4b59f; polygon-opacity: 0.7; line-color: #FFF; line-width: 1.5; line-opacity: 1; } #vic_m_d_schools_state_all_landusepuz2_dissolved [zoom < 15] { line-width: 1; line-opacity: .8; }",
+          "sql": "SELECT * FROM vic_m_o_schools_state_all_landusepuz2_dissolved",
+          "interactivity": ["cartodb_id"]
+        }
+      },
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "#vic_m_o_open_space{ polygon-fill: #aecc8f; polygon-opacity: 0.7; line-color: #FFF; line-width: 1.5; line-opacity: 1; } #vic_m_o_land_uses [zoom < 15] { line-width: 1; line-opacity: .8;}",
+          "sql": "SELECT * FROM vic_m_o_open_space",
+          "interactivity": ["cartodb_id"]
+        }
+      },
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "#vic_m_o_transport_routes {  line-opacity: 1;  line-offset: 2;}#vic_m_o_transport_routes[type=\"BUS\"] { line-color: #5CA2D1; line-width: 1.5; line-dasharray: 5,5;}#vic_m_o_transport_routes[type=\"SMARTBUS\"] {   line-color: #0F3B82;     line-width: 4;}#vic_m_o_transport_routes[type=\"TRAIN\"] {   line-color: #850200;       line-width: 3;}#vic_m_o_transport_routes[type=\"TRAM\"] {   line-color: #ea9653;     line-width: 3;     line-opacity: .7;} #vic_m_o_transport_routes [zoom < 16] {  line-offset: 1;#vic_m_o_transport_routes[type=\"BUS\"] {     line-width: 1.2;       line-dasharray: 4,4;}#vic_m_o_transport_routes[type=\"SMARTBUS\"] {     line-width: 3;}#vic_m_o_transport_routes[type=\"TRAIN\"] {       line-width: 2.5;}#vic_m_o_transport_routes[type=\"TRAM\"] {     line-width: 2;} #vic_m_o_transport_routes [zoom < 14] {      line-offset: 0;    #vic_m_o_transport_routes[type=\"BUS\"] {     line-width: 1;     line-dasharray: 2,2;   }#vic_m_o_transport_routes[type=\"SMARTBUS\"] {     line-width: 2.5;}#vic_m_o_transport_routes[type=\"TRAIN\"] {       line-width: 2;}#vic_m_o_transport_routes[type=\"TRAM\"] {     line-width: 1.6;}     } #vic_m_o_transport_routes [zoom < 12] {     line-opacity: 0.7;#vic_m_o_transport_routes[type=\"BUS\"] {     line-width: 1;}#vic_m_o_transport_routes[type=\"SMARTBUS\"] { line-width: 2.5;}#vic_m_o_transport_routes[type=\"TRAIN\"] { line-width: 2;}#vic_m_o_transport_routes[type=\"TRAM\"] { line-width: 1.6;}}}",
+          "sql": "SELECT * FROM vic_m_o_transport_routes",
+          "interactivity": ["cartodb_id"]
+        }
+      },
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "#vic_m_d_retailall{ polygon-fill: #562e60; polygon-opacity: 0.7; line-color: #FFF; line-width: 1.5; line-opacity: 1;}#vic_m_d_retailall [zoom < 15] { line-width: 1; line-opacity: .8;}",
+          "sql": "SELECT * FROM vic_m_o_retailall",
+          "interactivity": ["cartodb_id"]
+        }
+      },
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "#vic_m_d_smart_bus_stops{ marker-file: url(https://s3.amazonaws.com/com.cartodb.users-assets.production/production/mnatoli/assets/20150824122709smartbus_icon.png);  marker-opacity: 0.9;  marker-width: 9;  marker-allow-overlap: true;} #vic_m_d_smart_bus_stops [zoom < 16] {marker-width: 8;  marker-opacity: 1;} #vic_m_d_smart_bus_stops [zoom < 15] {marker-width: 7;marker-opacity: 1;} #vic_m_d_smart_bus_stops [zoom < 14] {marker-width: 6;  marker-opacity: 0.7;} #vic_m_d_smart_bus_stops [zoom < 13] {marker-width: 5;marker-opacity: 0.5;} #vic_m_d_smart_bus_stops [zoom < 12] {marker-width: 3;marker-opacity: 0.4;}",
+          "sql": "SELECT * FROM vic_m_d_smart_bus_stops",
+          "interactivity": ["cartodb_id"]
+        }
+      },
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "#vic_m_d_train_stations{  marker-file: url(https://s3.amazonaws.com/com.cartodb.users-assets.production/production/mnatoli/assets/20150824115141Train_Icons-Option-2.png);  marker-fill-opacity: 1;  marker-width: 14;  marker-allow-overlap: true;} #vic_m_d_train_stations [zoom < 16] {marker-width: 12;marker-opacity: 1;} #vic_m_d_train_stations [zoom < 15] {marker-width: 10;marker-opacity: 1;} #vic_m_d_train_stations [zoom < 14] {marker-width: 8;marker-opacity: .7;} #vic_m_d_train_stations [zoom < 13] {marker-width: 7;marker-opacity: .6;} #vic_m_d_train_stations [zoom < 12] {marker-width: 6;marker-opacity: .5;} #vic_m_d_train_stations::labels {      [zoom  >= 15] { text-name: [station]; text-face-name: 'DejaVu Sans Book';  text-size: 13; text-fill: #850200; text-halo-fill: #FFF; text-halo-radius: 1; text-dx: 10; text-allow-overlap: true; text-placement: point; text-placement-type: simple;  }}",
+          "sql": "SELECT * FROM vic_m_d_train_stations",
+          "interactivity": ["cartodb_id"]
+        }
+      },
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "#vic_m_d_tram_stop_destination{ marker-file: url(https://s3.amazonaws.com/com.cartodb.users-assets.production/production/mnatoli/assets/20150825121252tram-icon2.png); marker-opacity: 0.9; marker-width: 10; marker-allow-overlap: true;} #vic_m_d_tram_stop_destination [zoom < 16] {marker-width: 8; marker-opacity: 1; marker-allow-overlap: true;} #vic_m_d_tram_stop_destination [zoom < 15] {marker-width: 7;  marker-opacity: 1;    marker-allow-overlap: true;} #vic_m_d_tram_stop_destination [zoom < 14] {marker-width: 6; marker-opacity: 0.8; marker-allow-overlap: true;} #vic_m_d_tram_stop_destination [zoom < 13] {marker-width: 3;  marker-opacity: 0.7; marker-allow-overlap: true;} #vic_m_d_smart_bus_stops [zoom < 12] {marker-width: 2;marker-opacity: 0.7;marker-allow-overlap: true;} #vic_m_d_smart_bus_stops [zoom < 11] {marker-width: 3;marker-opacity: 0.6;marker-allow-overlap: true;}",
+          "sql": "SELECT * FROM vic_m_d_tram_stop_destination",
+          "interactivity": ["cartodb_id"]
+        }
+      },
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "#vic_m_d_bus_stop_destination{ marker-file: url(https://s3.amazonaws.com/com.cartodb.users-assets.production/production/mnatoli/assets/20150824115847bus-icon.png); marker-fill-opacity: 0.9; marker-width: 9; marker-allow-overlap: true;} #vic_m_d_bus_stop_destination [zoom < 16] {marker-width: 6;marker-opacity: 1;} #vic_m_d_bus_stop_destination [zoom < 15] {marker-width: 5;marker-opacity: 1;} #vic_m_d_bus_stop_destination [zoom < 14] {marker-width: 4;marker-opacity: .7;} #vic_m_d_bus_stop_destination [zoom < 13] {marker-width: 3;marker-opacity: 0.4;} #vic_m_d_bus_stop_destination [zoom < 12] {marker-width: 2;marker-opacity: 0.2;}",
+          "sql": "SELECT * FROM vic_m_d_bus_stop_destination",
+          "interactivity": ["cartodb_id"]
+        }
+      },
+      {
+        "type": "cartodb",
+        "options": {
+          "cartocss_version": "2.1.1",
+          "cartocss": "#vic_m_d_coleswooliesaldisupaiga_perturb5m { marker-fill-opacity: 0.6; marker-line-color: #FFF;  marker-line-width: 1;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 10;  marker-fill: #3B007F;  marker-allow-overlap: true;}#vic_m_d_coleswooliesaldisupaiga_perturb5m [zoom <15]{  marker-fill-opacity: 0.6;   marker-line-color: #FFF;  marker-line-width: 1;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 7;  marker-fill: #3B007F;  marker-allow-overlap: true;} #vic_m_d_coleswooliesaldisupaiga_perturb5m [zoom <13]{  marker-fill-opacity: 0.4;   marker-line-color: #FFF;  marker-line-width: 1;  marker-line-opacity: 1;  marker-placement: point;  marker-type: ellipse;  marker-width: 5;  marker-fill: #3B007F;  marker-allow-overlap: true;}#vic_m_d_coleswooliesaldisupaiga_perturb5m::labels [zoom >=15]{  text-name: [company];  text-face-name: 'DejaVu Sans Book';  text-size: 10;  text-label-position-tolerance: 0;  text-fill: #000; text-halo-fill: #FFF; text-halo-radius: 1; text-dy: -10; text-allow-overlap: true;  text-placement: point;  text-placement-type: dummy;}",
+          "sql": "SELECT * FROM vic_m_d_coleswooliesaldisupaiga_leosmaxifoods_28355_perturb5m",
+          "interactivity": ["cartodb_id"]
+        }
+      }]
+  },
+  "view": {
+    "zoom": 12,
+    "center": {
+      "lng": 144.3929672241211,
+      "lat": -38.07417659361918
+    },
+    "bounds": {
+      "west": -45,
+      "south": -45,
+      "east": 45,
+      "north": 45
+    }
+  }
+}
